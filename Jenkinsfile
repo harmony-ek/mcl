@@ -12,7 +12,7 @@ pipeline {
           rm -rf destdir
           install -d destdir/usr/local/include
           install -d destdir/usr/local/lib
-          make PREFIX=`pwd`/destdir/usr/local install
+          make PREFIX="$(pwd)/destdir/usr/local" install
         '''
       }
     }
