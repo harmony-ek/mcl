@@ -1,9 +1,8 @@
 pipeline {
   agent {
     docker {
-      image 'harmonyone/harmony-jenkins-agent:latest'
+      image 'harmonyone/harmony-jenkins-agent:6570bbc6-20190405T1821Z'
     }
-
   }
   stages {
     stage('Build & Install') {
